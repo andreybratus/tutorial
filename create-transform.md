@@ -26,7 +26,7 @@ Our input file format should be recognized correctly, so go ahead and click on *
 ### Identify problems with data
 On the project screen we have a preview of our tabular data entries and we can easily identify the following problems that we want to clean:
 
-* In column "nome" all values are in uppercase, which we want to transform into CammelCase, such that:
+* In column "nome" all entries are in uppercase, which we want to transform into CammelCase, such that:
 > LA VALLE DEI MEDICI ---> La Valle Dei Medici
 
 * In columns "lt" and "lg" we have numerical values that represent latitude, longitude coordinates. Some entries appear have to many digits after the decimal point. Therefore, we want to limit the amount of digits after the decimal points to 2 digits, such that:
@@ -62,7 +62,10 @@ return round(value,2)
 You can preview the result of an expression before applying it on the whole dataset. To complete the transform click OK.
 
 ### Extract transformation rules
-OpenRefine keeps track of the
+OpenRefine keeps track of all changes you apply to a dataset and allows you to undo or redo them using the history entries that are listed in **Undo/Redo** tab. Moreover, you it allows you to extract transformation rules in as a JSON array. Each element of an array is a JSON object describing a transformation rule.
+![Image](/img/ext-transform.png)
+
+To save transformation rules for later use click on the extract button of the history panel and copy its contents to a file. Use such transformation rules file to pass to the Batchrefine transformer together with the corresponding dataset. 
 
 
 [1] : https://github.com/fusepoolP3/p3-batchrefine "Batchrefine transformer"
