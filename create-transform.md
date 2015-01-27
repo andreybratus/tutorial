@@ -27,13 +27,34 @@ On the project screen we have a preview of our tabular data entries and we can e
 * In column "nome" all values are in uppercase, which we want to transform into CammelCase, such that:
 > LA VALLE DEI MEDICI ---> La Valle Dei Medici
 
-* In columns "lt" and "lg" we have numerical values that represent latitude, longitude cordinates. Some entries appear have to many digits after the decimal point. Therefore, we want to limit the amount of digits after the decimal points to 2 digits, such that:
+* In columns "lt" and "lg" we have numerical values that represent latitude, longitude coordinates. Some entries appear have to many digits after the decimal point. Therefore, we want to limit the amount of digits after the decimal points to 2 digits, such that:
 > 37.40425419999999689935066271 ---> 37.40
 
 ### Perform cleaning
 
-2. To correct all the values in column "nome" click on the arrow near the column title and choose:
-> *Edit cells --> Common transforms --> To titlecase*
+
+1. To transform all the entries in column "nome" into CamelCase click on the arrow near the column title and select:
+> Edit cells --> Common transforms --> To titlecase*
 
 ![To titlecase transform]
 (https://github.com/andreybratus/tutorial/blob/master/img/titlecase.png)
+
+2. Fixing the lenght of coordinates in columns "lt" and "lg" is performed in two steps:
+* Parse the string values to have them identified as numbers by clicking on the arrow near the column title and selecting:
+> Edit cells --> Common transforms --> To number
+
+![Image](/img/to-number.png)
+
+Numeric entries are represented with green color. Perform the same task for both columns.
+
+* In the next step we will round the numeric values to 2 digits after the decimal point. Open the transform window by clicking on the arrow near the column title and selecting:
+> Edit cells --> Transform
+In this window we can apply custom transformations on column entries by writing expressions in one of the available languages (Google Refine Expression Language [(GREL)}(https://github.com/OpenRefine/OpenRefine/wiki/Google-refine-expression-language), Clojure or Jython.
+In this tutorial we use Jython as an example:
+```
+return round(value,2)
+```
+
+![Image](/img/round.png)
+
+You may preview the result of the expression before applying it. To complete the transform click OK.
