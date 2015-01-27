@@ -21,7 +21,7 @@ OpenRefine attempts to identify input file format automatically but allows to co
 
 
 <div align="center">
-<img src="/img/create-project2.png" alt="Create project" width="60%" height=60%>
+<img src="/img/create-project2.png" alt="Create project" width="75%" height=75%>
 </div>
 
 Our input file format should be recognized correctly, so go ahead and click on *Create Project*.
@@ -43,7 +43,7 @@ On the project screen we have a preview of our tabular data entries and we can e
 > Edit cells --> Common transforms --> To titlecase*
 
 <div align="center">
-<img src="/img/titlecase.png" alt="To CamelCase transform" width="60%" height=60%>
+<img src="/img/titlecase.png" alt="To CamelCase transform" width="70%" height=70%>
 </div>
 
 2. Fixing the lenght of coordinates in columns "lt" and "lg" is performed in two steps:
@@ -51,7 +51,7 @@ On the project screen we have a preview of our tabular data entries and we can e
 > Edit cells --> Common transforms --> To number
 
 <div align="center">
-<img src="/img/to-number.png" alt="To titlecase transform" width="60%" height=60%>
+<img src="/img/to-number.png" alt="Parse number" width="60%" height=60%>
 </div>
 
 Numeric entries are represented with green color. Perform the same task for both columns.
@@ -65,7 +65,7 @@ return round(value,2)
 ```
 
 <div align="center">
-<img src="/img/round.png" alt="To titlecase transform" width="60%" height=60%>
+<img src="/img/round.png" alt="Jython expression" width="60%" height=60%>
 </div>
 
 
@@ -75,7 +75,7 @@ You can preview the result of an expression before applying it on the whole data
 OpenRefine keeps track of all changes you apply to a dataset and allows you to undo or redo them using the history entries that are listed in **Undo/Redo** tab. Moreover, you it allows you to extract transformation rules in as a JSON array. Each element of an array is a JSON object describing a transformation rule.
 
 <div align="center">
-<img src="/img/extr-transform.png" alt="To titlecase transform" width="60%" height=60%>
+<img src="/img/extr-transform.png" alt="Extract transform rules" width="67%" height=67%>
 </div>
 
 
