@@ -19,8 +19,10 @@ Tutorial
 
 OpenRefine attempts to identify input file format automatically but allows to configure data importing (format, separator type, etc.)
 
-![Image](/img/create-project2.png)
 
+<div align="center">
+<img src="/img/create-project2.png" alt="Create project" width="60%" height=60%>
+</div>
 
 Our input file format should be recognized correctly, so go ahead and click on *Create Project*.
 
@@ -40,14 +42,17 @@ On the project screen we have a preview of our tabular data entries and we can e
 1. To transform all the entries in column "nome" into CamelCase click on the arrow near the column title and select:
 > Edit cells --> Common transforms --> To titlecase*
 
-![To titlecase transform]
-(https://github.com/andreybratus/tutorial/blob/master/img/titlecase.png)
+<div align="center">
+<img src="/img/titlecase.png" alt="To CamelCase transform" width="60%" height=60%>
+</div>
 
 2. Fixing the lenght of coordinates in columns "lt" and "lg" is performed in two steps:
 * Parse the string values to have them identified as numbers by clicking on the arrow near the column title and selecting:
 > Edit cells --> Common transforms --> To number
 
-![Image](/img/to-number.png)
+<div align="center">
+<img src="/img/to-number.png" alt="To titlecase transform" width="60%" height=60%>
+</div>
 
 Numeric entries are represented with green color. Perform the same task for both columns.
 
@@ -59,13 +64,21 @@ In this tutorial we use Jython as an example:
 return round(value,2)
 ```
 
-![Image](/img/round.png)
+<div align="center">
+<img src="/img/round.png" alt="To titlecase transform" width="60%" height=60%>
+</div>
+
 
 You can preview the result of an expression before applying it on the whole dataset. To complete the transform click OK.
 
 ### Extract transformation rules
 OpenRefine keeps track of all changes you apply to a dataset and allows you to undo or redo them using the history entries that are listed in **Undo/Redo** tab. Moreover, you it allows you to extract transformation rules in as a JSON array. Each element of an array is a JSON object describing a transformation rule.
-![Image](/img/extr-transform.png)
+
+<div align="center">
+<img src="/img/extr-transform.png" alt="To titlecase transform" width="60%" height=60%>
+</div>
+
+
 
 To save transformation rules for later use click on the extract button of the history panel and copy its contents to a file. Use such transformation rules file to pass to the Batchrefine transformer together with the corresponding dataset. 
 
