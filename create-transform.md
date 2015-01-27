@@ -12,8 +12,8 @@ Tutorial
 ---------
 1. Start OpenRefine, a new web browser window should open automatically, or you can point it to *http://localhost:3333* (default configuration). On the **Create Project** tab upload the aforementioned CSV file.
 
-<div style="text-align:center">
-<img src="/img/create-project" alt="Create project" width="60%" height=60%>
+<div align="center">
+<img src="/img/create-project.png" alt="Create project" width="60%" height=60%>
 </div>
 
 
