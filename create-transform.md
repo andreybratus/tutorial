@@ -1,9 +1,11 @@
 Tutorial to create a simple transform with OpenRefine
 =====================================================
 
+This tutorial describes the process of perfmorning data cleaning operations with OpenRefine and how to extract transformation rules that we use to clean a specific dataset. These rules can be later used to pass to the batchrefine [transformer][1].
+
 Requirements for this tutorial:
 
-* Install **OpenRefine** from [here](http://openrefine.org) or clone and build it from source [git](https://github.com/OpenRefine/OpenRefine.git)
+* Install **OpenRefine** from [here][2] or clone and build it from source [git](https://github.com/OpenRefine/OpenRefine.git)
 * As input file we use a CSV [file](http://dati.toscana.it/dataset/ceb33e9c-7c80-478a-a3be-2f3700a64906/resource/5e8ec560-cbe6-4630-b191-e274218c183c/download/strutturericettive20141012.csv) provided by RET.
 
 Tutorial
@@ -57,4 +59,12 @@ return round(value,2)
 
 ![Image](/img/round.png)
 
-You may preview the result of the expression before applying it. To complete the transform click OK.
+You can preview the result of an expression before applying it on the whole dataset. To complete the transform click OK.
+
+### Extract transformation rules
+OpenRefine keeps track of the
+
+
+[1] : https://github.com/fusepoolP3/p3-batchrefine "Batchrefine transformer"
+
+[2] : http://openrefine.org "OpenRefine"
