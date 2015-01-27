@@ -63,7 +63,7 @@ You can preview the result of an expression before applying it on the whole data
 
 ### Extract transformation rules
 OpenRefine keeps track of all changes you apply to a dataset and allows you to undo or redo them using the history entries that are listed in **Undo/Redo** tab. Moreover, you it allows you to extract transformation rules in as a JSON array. Each element of an array is a JSON object describing a transformation rule.
-![Image](/img/ext-transform.png)
+![Image](/img/extr-transform.png)
 
 To save transformation rules for later use click on the extract button of the history panel and copy its contents to a file. Use such transformation rules file to pass to the Batchrefine transformer together with the corresponding dataset. 
 
