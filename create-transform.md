@@ -1,7 +1,7 @@
 Tutorial to create a simple transform with OpenRefine
 =====================================================
 
-This tutorial describes the process of perfmorning data cleaning operations with OpenRefine and how to extract transformation rules that we use to clean a specific dataset. These rules can be later used to pass to the Batchrefine [transformer][batchrefine].
+This tutorial describes the process of performing data cleaning operations with OpenRefine and how to extract transformation rules that we use to clean a specific dataset. These rules can be later used to pass to the Batchrefine[batchrefine] transformer.
 
 Requirements for this tutorial:
 
@@ -46,7 +46,7 @@ On the project screen we have a preview of our tabular data entries and we can e
 <img src="/img/titlecase.png" alt="To CamelCase transform" width="70%" height=70%>
 </div>
 
-2. Fixing the lenght of coordinates in columns "lt" and "lg" is performed in two steps:
+2. Fixing the length of coordinates in columns "lt" and "lg" is performed in two steps:
 * Parse the string values to have them identified as numbers by clicking on the arrow near the column title and selecting:
 > Edit cells --> Common transforms --> To number
 
