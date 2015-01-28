@@ -1,11 +1,11 @@
 Tutorial to create a simple transform with OpenRefine
 =====================================================
 
-This tutorial describes the process of perfmorning data cleaning operations with OpenRefine and how to extract transformation rules that we use to clean a specific dataset. These rules can be later used to pass to the batchrefine [transformer][1].
+This tutorial describes the process of perfmorning data cleaning operations with OpenRefine and how to extract transformation rules that we use to clean a specific dataset. These rules can be later used to pass to the Batchrefine [transformer](https://github.com/fusepoolP3/p3-batchrefine).
 
 Requirements for this tutorial:
 
-* Install **OpenRefine** from [here][2] or clone and build it from source [git](https://github.com/OpenRefine/OpenRefine.git)
+* Install **OpenRefine** from [here][openrefine] or clone and build it from source [git](https://github.com/OpenRefine/OpenRefine.git)
 * As input file we use a CSV [file](http://dati.toscana.it/dataset/ceb33e9c-7c80-478a-a3be-2f3700a64906/resource/5e8ec560-cbe6-4630-b191-e274218c183c/download/strutturericettive20141012.csv) provided by RET.
 
 Tutorial
@@ -83,6 +83,4 @@ OpenRefine keeps track of all changes you apply to a dataset and allows you to u
 To save transformation rules for later use click on the extract button of the history panel and copy its contents to a file. Use such transformation rules file to pass to the Batchrefine transformer together with the corresponding dataset. 
 
 
-[1] : https://github.com/fusepoolP3/p3-batchrefine "Batchrefine transformer"
-
-[2] : http://openrefine.org "OpenRefine"
+[openrefine]: http://openrefine.org "OpenRefine"
