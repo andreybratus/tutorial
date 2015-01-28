@@ -1,7 +1,7 @@
 Tutorial to create a simple transform with OpenRefine
 =====================================================
 
-This tutorial describes the process of perfmorning data cleaning operations with OpenRefine and how to extract transformation rules that we use to clean a specific dataset. These rules can be later used to pass to the Batchrefine [transformer](https://github.com/fusepoolP3/p3-batchrefine).
+This tutorial describes the process of perfmorning data cleaning operations with OpenRefine and how to extract transformation rules that we use to clean a specific dataset. These rules can be later used to pass to the Batchrefine [transformer][batchrefine].
 
 Requirements for this tutorial:
 
@@ -58,7 +58,7 @@ Numeric entries are represented with green color. Perform the same task for both
 
 * In the next step we will round the numeric values to 2 digits after the decimal point. Open the transform window by clicking on the arrow near the column title and selecting:
 > Edit cells --> Transform
-In this window we can apply custom transformations on column entries by writing expressions in one of the available languages (Google Refine Expression Language [(GREL)}(https://github.com/OpenRefine/OpenRefine/wiki/Google-refine-expression-language), Clojure or Jython.
+In this window we can apply custom transformations on column entries by writing expressions in one of the available languages (Google Refine Expression Language [(GREL)][grel], Clojure or Jython.
 In this tutorial we use Jython as an example:
 ```
 return round(value,2)
@@ -84,3 +84,7 @@ To save transformation rules for later use click on the extract button of the hi
 
 
 [openrefine]: http://openrefine.org "OpenRefine"
+
+[batchrefine]: https://github.com/fusepoolP3/p3-batchrefine "Batchrefine"
+
+[grel]: https://github.com/OpenRefine/OpenRefine/wiki/Google-refine-expression-language "Google Refine Expression Language"
